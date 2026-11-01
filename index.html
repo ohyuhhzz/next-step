@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Next Step: Addiction Help for Teens (Vaping, Screens, Social Pressure)</title>
+<meta name="description" content="A student-made guide to vaping, screen, and social-validation addiction, with free, confidential help for teens and young adults.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f1;--surface:#fff;--ink:#14262b;--muted:#4a5f64;--teal:#0f6b6b;--teal-ink:#fff;--line:#cdd9d6;--crisis:#c8392f;--crisis-ink:#fff;--sun:#f2b84b;--sun-ink:#14262b;
+--head:"Bricolage Grotesque","Trebuchet MS",sans-serif;--body:"Atkinson Hyperlegible",Verdana,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a1d;--surface:#16272b;--ink:#e8f1ef;--muted:#a3b8b8;--teal:#5fc4bb;--teal-ink:#0e1a1d;--line:#2a4045;--crisis:#ff7a6e;--crisis-ink:#1a0a08;--sun:#f2b84b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1a1d;--surface:#16272b;--ink:#e8f1ef;--muted:#a3b8b8;--teal:#5fc4bb;--teal-ink:#0e1a1d;--line:#2a4045;--crisis:#ff7a6e;--crisis-ink:#1a0a08;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 var(--body)}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:800}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800}
+h3{font-size:1.25rem;font-weight:600}
+p{margin:0 0 1em;max-width:68ch}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
+.brand{font-family:var(--head);font-weight:800;font-size:1.3rem;color:var(--ink);text-decoration:none}
+nav a{color:var(--ink);margin-left:16px;text-decoration:none;font-weight:700;font-size:.95rem}
+nav a:hover{text-decoration:underline}
+.hero{padding:40px 0 56px}
+.hero p.lead{font-size:1.25rem;max-width:56ch}
+.crisis{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:28px}
+.call{display:block;text-decoration:none;border-radius:18px 18px 18px 4px;padding:18px 20px;background:var(--crisis);color:var(--crisis-ink)}
+.call.alt{background:var(--sun);color:var(--sun-ink)}
+.call.alt2{background:var(--teal);color:var(--teal-ink)}
+.call b{display:block;font-family:var(--head);font-size:1.7rem;line-height:1.1}
+.call span{font-size:.95rem}
+.note{font-size:.95rem;color:var(--muted);margin-top:14px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.tabs button{font:inherit;font-weight:700;padding:10px 18px;border-radius:999px;border:2px solid var(--teal);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--teal);color:var(--teal-ink)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px 26px}
+.panel[hidden]{display:none}
+.panel ol{padding-left:1.2em;margin:0}
+.panel li{margin-bottom:.7em;max-width:64ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card.big{border-radius:28px 28px 28px 6px}
+.card ul{padding-left:1.1em;margin:0}
+.card li{margin-bottom:.45em}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:20px}
+.res a.item{display:block;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;color:var(--ink)}
+.res a.item:hover{border-color:var(--teal)}
+.res a.item strong{display:block;color:var(--teal);font-size:1.05rem}
+.res a.item span{font-size:.95rem;color:var(--muted)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:.6em 0 0}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+.tog{font:inherit;background:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink);cursor:pointer}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}.stat{border-left:6px solid var(--sun);padding:4px 0 4px 16px}.stat b{display:block;font-family:var(--head);font-size:2.4rem;line-height:1}.stat span{font-size:.95rem;color:var(--muted)}.tag{display:inline-block;background:var(--teal);color:var(--teal-ink);border-radius:999px;padding:2px 12px;font-size:.85rem;font-weight:700;margin-bottom:8px}nav{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}nav a{margin-left:0}.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);max-width:22ch}.res h3{grid-column:1/-1;margin:18px 0 0;font-size:1.1rem}section h2{margin-bottom:.6em}@media (max-width:560px){body{font-size:17px}section{padding:40px 0}.hero{padding:24px 0 40px}}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="#top">Next Step</a>
+  <nav aria-label="Main">
+    <a href="#help">Get help</a><a href="#focus">Our focus</a><a href="#solutions">What helps</a><a href="#find">Support</a><a href="#about">About</a>
+    <button class="tog" id="theme" aria-label="Switch light or dark theme">Theme</button>
+  </nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <h1>Vaping, scrolling, needing to fit in. It can become addiction, and help is free.</h1>
+  <p class="lead">Next Step is a judgment-free guide made by students for teens and young adults, and the people who care about them. No sign-up. We don’t collect your information.</p>
+  <div class="crisis" id="help">
+    <a class="call" href="tel:988"><b>Call or text 988</b><span>Suicide and Crisis Lifeline. Free, 24/7.</span></a>
+    <a class="call alt" href="tel:18006624357"><b>1-800-662-4357</b><span>SAMHSA National Helpline for substance use. Free, confidential, 24/7.</span></a>
+    <a class="call alt2" href="sms:741741?&body=HOME"><b>Text HOME to 741741</b><span>Crisis Text Line. Talk to a trained counselor by text.</span></a>
+  </div>
+  <p class="note"><strong>If someone has stopped breathing, can’t be woken up, or you think they overdosed, call 911 now.</strong> In the U.S., Poison Control is 1-800-222-1222.</p>
+</div>
+
+<section id="start">
+  <h2>Where do you want to start?</h2>
+  <div class="tabs" role="tablist" aria-label="Choose your situation">
+    <button role="tab" aria-selected="true" aria-controls="p-me" id="t-me">It’s me</button>
+    <button role="tab" aria-selected="false" aria-controls="p-friend" id="t-friend">It’s my friend</button>
+    <button role="tab" aria-selected="false" aria-controls="p-family" id="t-family">It’s my sibling or child</button>
+  </div>
+  <div class="panel" role="tabpanel" id="p-me" aria-labelledby="t-me">
+    <h3>If you think you may have a problem</h3>
+    <ol>
+      <li><strong>Know that asking is a strong move.</strong> Addiction is a health condition, not a character flaw, and it is treatable.</li>
+      <li><strong>Talk to one safe person.</strong> A parent, school counselor, coach, doctor, or older sibling. If that feels impossible, start with a free helpline above.</li>
+      <li><strong>Get a check-up.</strong> A doctor or school nurse can screen for substance use. In most places, teens can talk about this privately, though rules on confidentiality vary by state and situation.</li>
+      <li><strong>Explore support that fits you.</strong> Counseling, outpatient programs, and peer groups all work for different people. See <a href="#find">Find support</a>.</li>
+      <li><strong>If you slip, keep going.</strong> Relapse is common and does not mean you failed.</li>
+    </ol>
+  </div>
+  <div class="panel" role="tabpanel" id="p-friend" aria-labelledby="t-friend" hidden>
+    <h3>If you’re worried about a friend</h3>
+    <ol>
+      <li><strong>Pick a calm, private moment.</strong> Not when they are high or drunk.</li>
+      <li><strong>Start with care, not blame.</strong> Try: “I’ve noticed you seem different lately, and I’m worried about you.”</li>
+      <li><strong>Listen more than you talk.</strong> Skip labels like “addict” and avoid ultimatums.</li>
+      <li><strong>Encourage them to talk to a trusted adult or helpline,</strong> and offer to go with them.</li>
+      <li><strong>Don’t cover for them or keep dangerous secrets.</strong> If their life is at risk, tell an adult. That is not betrayal.</li>
+      <li><strong>Look after yourself too.</strong> You can’t fix this alone. See <a href="#friend">Helping a friend</a>.</li>
+    </ol>
+  </div>
+  <div class="panel" role="tabpanel" id="p-family" aria-labelledby="t-family" hidden>
+    <h3>If you’re a family member</h3>
+    <ol>
+      <li><strong>Stay calm and keep the door open.</strong> Shame and anger usually push people away from help.</li>
+      <li><strong>Ask open questions</strong> and listen without lecturing.</li>
+      <li><strong>Call the SAMHSA helpline (1-800-662-4357)</strong> or your pediatrician for guidance and referrals.</li>
+      <li><strong>Ask about treatment designed for teens.</strong> Adolescents often need different approaches than adults.</li>
+      <li><strong>Find support for yourself,</strong> such as Al-Anon/Alateen or Partnership to End Addiction’s parent helpline.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="focus">
+  <h2>Three addictions we focus on</h2>
+  <p>Addiction means you keep doing something even though it’s hurting you, and stopping feels really hard. It isn’t only drugs and alcohol. These three show up most in teen life.</p>
+  <div class="stats">
+    <div class="stat"><b>16.8%</b><span>of Americans over 12 struggle with addiction to alcohol or drugs alone</span></div>
+    <div class="stat"><b>20.8%</b><span>of high school students vaped in 2019, up from 1.5% in 2011 (Meehan et al.)</span></div>
+    <div class="stat"><b>70%</b><span>of young people check social media several times a day (Lee et al.)</span></div>
+  </div>
+  <div class="grid">
+    <div class="card big"><span class="tag">Vaping</span>
+      <p>Bright designs and fun flavors are chosen to attract young people, whose brains are still developing.</p>
+      <ul><li><strong>Short term:</strong> a slight buzz and a social experience with friends</li><li><strong>Long term:</strong> lung problems, constant cravings, and a lot of money spent</li></ul></div>
+    <div class="card big"><span class="tag">Electronics</span>
+      <p>Apps are built to keep you looking. Feeds show you more of what you already liked, so it’s hard to stop.</p>
+      <ul><li><strong>Short term:</strong> small dopamine hits that make you want to keep scrolling</li><li><strong>Long term:</strong> eye strain and feeling more distant from people in real life</li></ul></div>
+    <div class="card big"><span class="tag">Social validation</span>
+      <p>Likes, comments, and approval can start to shape how you see yourself.</p>
+      <ul><li><strong>Short term:</strong> a small dopamine hit when people respond to you</li><li><strong>Long term:</strong> craving acceptance all the time, linked to anxiety, depression, and low self-esteem (Gaba)</li></ul></div>
+  </div>
+</section>
+
+<section id="why">
+  <h2>Why it happens: we’re social creatures</h2>
+  <div class="grid">
+    <div class="card"><h3>We copy each other</h3><p>You see a friend vaping or posting something that gets attention, and you want to belong. Doing it once or twice can turn into an everyday need. Researchers like Professor Tang point out that people seek the respect and approval of others.</p></div>
+    <div class="card"><h3>The reward pathway</h3><p>These habits trigger the reward pathway in your brain. You get a rush, then keep searching for it again.</p></div>
+    <div class="card"><h3>It’s designed to hook you</h3><p>Colorful packaging, flavors, flashing signs, and loud sounds on devices are built to catch the attention of young people, whose brains are still developing.</p></div>
+    <div class="card"><h3>It can happen to anyone</h3><p>Younger people can get hooked faster, but no age group is safe. It is not a sign of weakness.</p></div>
+  </div>
+</section>
+
+<section id="withdrawal">
+  <h2>If you try to quit, it can feel rough</h2>
+  <p>Withdrawal happens when your body has gotten used to a substance and you stop. It’s a sign your body is adjusting, not a sign you’re failing.</p>
+  <div class="grid">
+    <div class="card"><h3>In the body</h3><ul><li>Sweating and chills</li><li>Nausea</li><li>Changes in heart rate</li></ul></div>
+    <div class="card"><h3>In mood and focus (nicotine)</h3><ul><li>Anger, anxiety, or depression</li><li>Strong cravings</li><li>Trouble concentrating</li><li>Impatience, restlessness, and trouble sleeping</li></ul></div>
+  </div>
+  <p class="note">Preventing addiction is easier than quitting, but quitting is possible. A doctor, school nurse, or the <a href="https://teen.smokefree.gov" target="_blank" rel="noopener">Smokefree Teen</a> tools can help you plan it.</p>
+</section>
+
+<section id="solutions">
+  <h2>What helps</h2>
+  <div class="grid">
+    <div class="card"><h3>Learn it</h3><p>When you understand why addiction happens, you can spot it early in yourself or a friend, and respond with care instead of judgment.</p></div>
+    <div class="card"><h3>Make it a community issue</h3><p>When addiction is treated as something we deal with together, not a personal failure, it removes the shame that keeps people quiet.</p></div>
+    <div class="card"><h3>Offer better options</h3><p>In the famous “Rat Park” experiment, animals with richer surroundings and company steered away from drugs. For people, that means real alternatives like teen centers, reading clubs, recreational sports leagues, art, volunteering, and friends to be around.</p></div>
+    <div class="card"><h3>Talk about it openly</h3><p>School assemblies, faith communities, and one-on-one conversations with resources on hand all help. Talk about addiction as something many people struggle with, not as one person’s flaw.</p></div>
+  </div>
+  <h3 style="margin-top:28px">Small things to try this week</h3>
+  <div class="card"><ul>
+    <li>Turn off notifications for one app that pulls you in.</li>
+    <li>Pick one hour a day without your phone, and do something with a friend instead.</li>
+    <li>Tell one person you trust what you’re noticing. That’s it for step one.</li>
+    <li>If you vape, text or call a helpline below. You can ask a question without committing to anything.</li>
+  </ul></div>
+</section>
+
+<section id="friend">
+  <h2>Helping a friend, and staying okay yourself</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Know the overdose signs</h3>
+      <ul>
+        <li>Can’t be woken up or is unresponsive</li>
+        <li>Slow, shallow, or no breathing</li>
+        <li>Blue or gray lips and fingertips</li>
+        <li>Choking or gurgling sounds</li>
+      </ul>
+      <p>Call 911. Many states have Good Samaritan laws that protect people who call for help. Ask your local health department about naloxone (Narcan), a medicine that can reverse an opioid overdose.</p>
+    </div>
+    <div class="card">
+      <h3>Things you can say</h3>
+      <ul>
+        <li>“I care about you. I’m here whenever you want to talk.”</li>
+        <li>“You don’t have to do this alone.”</li>
+        <li>“Can I help you find someone to talk to?”</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Protect your own health</h3>
+      <ul>
+        <li>You’re not responsible for their choices.</li>
+        <li>Set boundaries and say no to using with them.</li>
+        <li>Talk to a counselor or join Alateen.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="find">
+  <h2>Find free and low-cost support</h2>
+  <p>These are trusted organizations. Most services are free or low cost, and many take insurance, including Medicaid. Phone numbers are tappable on your phone.</p>
+  <div class="res">
+<h3>Talk to someone now</h3>
+<a class="item" href="tel:18007154225"><strong>Georgia Crisis and Access Line</strong><span>1-800-715-4225. Free, 24/7 mental health and substance use help in Georgia.</span></a>
+<a class="item" href="https://988lifeline.org" target="_blank" rel="noopener"><strong>988 Lifeline</strong><span>Call, text, or chat for mental health or crisis support.</span></a>
+<a class="item" href="https://www.thetrevorproject.org" target="_blank" rel="noopener"><strong>The Trevor Project</strong><span>Crisis support for LGBTQ+ young people. Call 1-866-488-7386 or text START to 678-678.</span></a>
+<a class="item" href="https://www.nami.org/help" target="_blank" rel="noopener"><strong>NAMI HelpLine</strong><span>Call 1-800-950-6264 for mental health information and referrals.</span></a>
+<h3>Quit vaping and nicotine</h3>
+<a class="item" href="https://teen.smokefree.gov" target="_blank" rel="noopener"><strong>Smokefree Teen</strong><span>Free tools and texting support for quitting vaping and smoking.</span></a>
+<a class="item" href="https://truthinitiative.org/thisisquitting" target="_blank" rel="noopener"><strong>This Is Quitting</strong><span>Free, anonymous text program for teens and young adults who want to quit vaping.</span></a>
+<a class="item" href="tel:18007848669"><strong>1-800-QUIT-NOW</strong><span>Free quitline that connects you with a coach in your state.</span></a>
+<a class="item" href="https://nida.nih.gov" target="_blank" rel="noopener"><strong>NIDA for Teens</strong><span>Science-based facts from the National Institute on Drug Abuse.</span></a>
+<h3>Screens and social media</h3>
+<a class="item" href="https://www.psychiatry.org/patients-families/technology-addictions-social-media-and-more/what-is-technology-addiction" target="_blank" rel="noopener"><strong>American Psychiatric Association</strong><span>What technology addiction is and when to get help.</span></a>
+<a class="item" href="https://www.commonsensemedia.org" target="_blank" rel="noopener"><strong>Common Sense Media</strong><span>Guides on screen time, social media, and healthy tech habits.</span></a>
+<a class="item" href="https://support.apple.com/guide/iphone/get-started-with-screen-time-iph3a98b4d57/ios" target="_blank" rel="noopener"><strong>Built-in screen tools</strong><span>iPhone has Screen Time. Android has Digital Wellbeing in Settings. Set app limits and quiet hours.</span></a>
+<h3>Find treatment and peer support</h3>
+<a class="item" href="https://findtreatment.gov" target="_blank" rel="noopener"><strong>FindTreatment.gov</strong><span>Search treatment facilities by location. Run by SAMHSA.</span></a>
+<a class="item" href="https://www.smartrecovery.org" target="_blank" rel="noopener"><strong>SMART Recovery</strong><span>Free skills-based peer meetings, online and in person.</span></a>
+<a class="item" href="https://www.aa.org" target="_blank" rel="noopener"><strong>Alcoholics Anonymous</strong><span>Peer support meetings. Look for young people’s meetings.</span></a>
+<a class="item" href="https://www.na.org" target="_blank" rel="noopener"><strong>Narcotics Anonymous</strong><span>Peer support for people recovering from drug use.</span></a>
+<h3>For families and friends</h3>
+<a class="item" href="https://drugfree.org" target="_blank" rel="noopener"><strong>Partnership to End Addiction</strong><span>Guidance and a helpline for parents and families.</span></a>
+<a class="item" href="https://al-anon.org/for-alateen/" target="_blank" rel="noopener"><strong>Alateen</strong><span>Support for teens affected by someone else’s drinking.</span></a>
+  </div>
+  <p class="note">Also ask your school counselor, school nurse, or doctor about local programs.</p>
+</section>
+
+<section id="faq">
+  <h2>Common questions</h2>
+  <details><summary>Will I get in trouble if I ask for help?</summary><p>Helplines are confidential and are there to support you, not punish you. Rules at schools and clinics vary, so you can ask “Is this confidential?” before sharing.</p></details>
+  <details><summary>Does needing help mean I’m addicted?</summary><p>Not necessarily. Substance use exists on a spectrum, and early support can prevent bigger problems. A professional can help you figure out where you are.</p></details>
+  <details><summary>Can I quit on my own?</summary><p>Some people can, but stopping certain substances suddenly, like alcohol or opioids, can be dangerous. Talk to a doctor first.</p></details>
+  <details><summary>What if I relapse?</summary><p>Relapse is common in recovery and doesn’t erase your progress. Reach out for support and try again.</p></details>
+  <details><summary>How do I pay for treatment?</summary><p>Many programs accept insurance or Medicaid, and some offer sliding-scale fees or free services. The SAMHSA helpline can point you to options.</p></details>
+</section>
+<section id="about">
+  <h2>About this project</h2>
+  <p>We’re Isaac Plancher and Sidney Bassey, juniors in the PCHS Magnet Program healthcare pathway, with a focus on mental health. Addiction affects friends and family in our lives, so we built this site as our capstone action project.</p>
+  <div class="grid">
+    <div class="card"><h3>Short-term goal</h3><p>Educate our community, especially adolescents at our school.</p></div>
+    <div class="card"><h3>Long-term goal</h3><p>Help stop addiction in our population, through education, resources, and school assemblies where people can talk to those affected.</p></div>
+  </div>
+  <details><summary>Works cited</summary>
+    <p>Ding, Keya, et al. “The Effects of Digital Addiction on Brain Function and Structure of Children and Adolescents: A Scoping Review.” <em>Healthcare</em>, vol. 12, no. 1, Jan. 2024, p. 15, <a href="https://doi.org/10.3390/healthcare12010015" target="_blank" rel="noopener">doi.org/10.3390/healthcare12010015</a>.</p>
+    <p>Gaba, Sherry. “Stop Seeking Validation from Others.” <em>Psychology Today</em>, 24 July 2019, <a href="https://www.psychologytoday.com/us/blog/addiction-and-recovery/201907/stop-seeking-validation-others" target="_blank" rel="noopener">psychologytoday.com</a>.</p>
+    <p>Lee, Hae Yeon, and Jeremy P. Jamieson. “Getting Fewer ‘Likes’ Than Others on Social Media Elicits Emotional Distress Among Victimized Adolescents.” <em>Child Development</em>, vol. 91, no. 6, Sept. 2020, pp. 2141–59, <a href="https://doi.org/10.1111/cdev.13422" target="_blank" rel="noopener">doi.org/10.1111/cdev.13422</a>.</p>
+    <p>Leslie, Frances M. “Unique, Long-Term Effects of Nicotine on Adolescent Brain.” <em>Pharmacology Biochemistry and Behavior</em>, vol. 197, Oct. 2020, article 173010, <a href="https://doi.org/10.1016/j.pbb.2020.173010" target="_blank" rel="noopener">doi.org/10.1016/j.pbb.2020.173010</a>.</p>
+    <p>Meehan, Judith, et al. “The Adverse Effects of Vaping in Young People.” <em>ScienceDirect</em>, Sept. 2024, <a href="https://www.sciencedirect.com/science/article/pii/S2667009724000587" target="_blank" rel="noopener">sciencedirect.com</a>.</p>
+    <p>Raven, Kathleen. “Nicotine Addiction From Vaping Is a Bigger Problem Than Teens Realize.” <em>Yale Medicine</em>, 19 Mar. 2019, <a href="https://www.yalemedicine.org/news/vaping-nicotine-addiction" target="_blank" rel="noopener">yalemedicine.org</a>.</p>
+    <p>Sherer, James. “What Is Technology Addiction?” American Psychiatric Association, Feb. 2024, <a href="https://www.psychiatry.org/patients-families/technology-addictions-social-media-and-more/what-is-technology-addiction" target="_blank" rel="noopener">psychiatry.org</a>.</p>
+    <p>Tang, Yilang. <em>Addiction’s Causes and Effects.</em> 18 Sept. 2026.</p>
+  </details>
+</section>
+</main>
+
+<footer>
+  <p><strong>Disclaimer:</strong> This site is for education and is not medical advice, diagnosis, or treatment. If you are in danger, call 911 or 988.</p>
+  <p>Created by Isaac Plancher and Sidney Bassey, PCHS Magnet Program, as a capstone action project on adolescent addiction, 2026. Resource information was current when published, so please verify numbers and links with the organizations.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('[role="tab"]');
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(x){
+      var on=x===t;x.setAttribute('aria-selected',on);
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+  });});
+  document.getElementById('theme').addEventListener('click',function(){
+    var r=document.documentElement,dark=getComputedStyle(r).colorScheme==='dark';
+    r.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+</body>
+</html>
