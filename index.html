@@ -14,31 +14,31 @@
 :root[data-theme="dark"]{--bg:#0e1a1d;--surface:#16272b;--ink:#e8f1ef;--muted:#a3b8b8;--teal:#5fc4bb;--teal-ink:#0e1a1d;--line:#2a4045;--crisis:#ff7a6e;--crisis-ink:#1a0a08;color-scheme:dark}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 var(--body)}
+body{margin:0;background:var(--bg);color:var(--ink);font:20px/1.65 var(--body)}
 a{color:var(--teal)}
 :focus-visible{outline:3px solid var(--sun);outline-offset:3px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
-h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:800}
-h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800}
-h3{font-size:1.25rem;font-weight:600}
+h1{font-size:clamp(2.5rem,7vw,4.7rem);font-weight:800}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800}
+h3{font-size:1.35rem;font-weight:600}
 p{margin:0 0 1em;max-width:68ch}
 header.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
-.brand{font-family:var(--head);font-weight:800;font-size:1.3rem;color:var(--ink);text-decoration:none}
-nav a{color:var(--ink);margin-left:16px;text-decoration:none;font-weight:700;font-size:.95rem}
+.brand{font-family:var(--head);font-weight:800;font-size:1.4rem;color:var(--ink);text-decoration:none}
+nav a{color:var(--ink);margin-left:16px;text-decoration:none;font-weight:700;font-size:1.05rem}
 nav a:hover{text-decoration:underline}
 .hero{padding:40px 0 56px}
-.hero p.lead{font-size:1.25rem;max-width:56ch}
+.hero p.lead{font-size:1.45rem;line-height:1.5;max-width:56ch}
 .crisis{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:28px}
 .call{display:block;text-decoration:none;border-radius:18px 18px 18px 4px;padding:18px 20px;background:var(--crisis);color:var(--crisis-ink)}
 .call.alt{background:var(--sun);color:var(--sun-ink)}
 .call.alt2{background:var(--teal);color:var(--teal-ink)}
-.call b{display:block;font-family:var(--head);font-size:1.7rem;line-height:1.1}
-.call span{font-size:.95rem}
-.note{font-size:.95rem;color:var(--muted);margin-top:14px}
+.call b{display:block;font-family:var(--head);font-size:1.75rem;line-height:1.1}
+.call span{display:block;margin-top:6px;font-size:1.12rem;line-height:1.4}
+.note{font-size:1.12rem;line-height:1.55;color:var(--muted);margin-top:16px}
 section{padding:56px 0;border-top:1px solid var(--line)}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
-.tabs button{font:inherit;font-weight:700;padding:10px 18px;border-radius:999px;border:2px solid var(--teal);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button{font:inherit;font-size:1.05rem;font-weight:700;padding:10px 18px;border-radius:999px;border:2px solid var(--teal);background:transparent;color:var(--ink);cursor:pointer}
 .tabs button[aria-selected="true"]{background:var(--teal);color:var(--teal-ink)}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px 26px}
 .panel[hidden]{display:none}
@@ -52,15 +52,30 @@ section{padding:56px 0;border-top:1px solid var(--line)}
 .res{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:20px}
 .res a.item{display:block;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;color:var(--ink)}
 .res a.item:hover{border-color:var(--teal)}
-.res a.item strong{display:block;color:var(--teal);font-size:1.05rem}
-.res a.item span{font-size:.95rem;color:var(--muted)}
+.res a.item strong{display:block;color:var(--teal);font-size:1.15rem}
+.res a.item span{display:block;margin-top:4px;font-size:1.08rem;line-height:1.45;color:var(--muted)}
 details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
-summary{cursor:pointer;font-weight:700}
-details p{margin:.6em 0 0}
-footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
-.tog{font:inherit;background:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink);cursor:pointer}
+summary{cursor:pointer;font-weight:700;font-size:1.12rem}
+details p{margin:.65em 0 0;font-size:1.08rem;line-height:1.55}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:1.08rem;line-height:1.55}
+.tog{font:inherit;font-size:1rem;background:none;border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--ink);cursor:pointer}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}.stat{border-left:6px solid var(--sun);padding:4px 0 4px 16px}.stat b{display:block;font-family:var(--head);font-size:2.4rem;line-height:1}.stat span{font-size:.95rem;color:var(--muted)}.tag{display:inline-block;background:var(--teal);color:var(--teal-ink);border-radius:999px;padding:2px 12px;font-size:.85rem;font-weight:700;margin-bottom:8px}nav{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}nav a{margin-left:0}.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);max-width:22ch}.res h3{grid-column:1/-1;margin:18px 0 0;font-size:1.1rem}section h2{margin-bottom:.6em}@media (max-width:560px){body{font-size:17px}section{padding:40px 0}.hero{padding:24px 0 40px}}</style>
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}
+.stat{border-left:6px solid var(--sun);padding:4px 0 4px 16px}
+.stat b{display:block;font-family:var(--head);font-size:2.5rem;line-height:1}
+.stat span{display:block;margin-top:6px;font-size:1.1rem;line-height:1.45;color:var(--muted)}
+.tag{display:inline-block;background:var(--teal);color:var(--teal-ink);border-radius:999px;padding:3px 14px;font-size:.98rem;font-weight:700;margin-bottom:10px}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+nav a{margin-left:0}
+.hero h1{font-size:clamp(2.1rem,5.5vw,3.5rem);max-width:22ch}
+.res h3{grid-column:1/-1;margin:20px 0 0;font-size:1.3rem}
+section h2{margin-bottom:.6em}
+.media-box{margin:24px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px}
+.media-box img{display:block;width:100%;max-height:440px;object-fit:contain;border-radius:12px;background:var(--bg)}
+.media-box figcaption{margin-top:10px;font-size:1.1rem;line-height:1.5;color:var(--muted)}
+.card-img{display:block;width:100%;height:180px;object-fit:cover;border-radius:12px;margin-bottom:14px;background:var(--bg)}
+@media (max-width:560px){body{font-size:18px}.hero p.lead{font-size:1.25rem}section{padding:40px 0}.hero{padding:24px 0 40px}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -137,6 +152,7 @@ footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
       <p>Bright designs and fun flavors are chosen to attract young people, whose brains are still developing.</p>
       <ul><li><strong>Short term:</strong> a slight buzz and a social experience with friends</li><li><strong>Long term:</strong> lung problems, constant cravings, and a lot of money spent</li></ul></div>
     <div class="card big"><span class="tag">Electronics</span>
+      <img class="card-img" src="assets/page-3.png" alt="Graphic reading Get Off Your Phone by Darius Foroux">
       <p>Apps are built to keep you looking. Feeds show you more of what you already liked, so it’s hard to stop.</p>
       <ul><li><strong>Short term:</strong> small dopamine hits that make you want to keep scrolling</li><li><strong>Long term:</strong> eye strain and feeling more distant from people in real life</li></ul></div>
     <div class="card big"><span class="tag">Social validation</span>
@@ -153,6 +169,10 @@ footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
     <div class="card"><h3>It’s designed to hook you</h3><p>Colorful packaging, flavors, flashing signs, and loud sounds on devices are built to catch the attention of young people, whose brains are still developing.</p></div>
     <div class="card"><h3>It can happen to anyone</h3><p>Younger people can get hooked faster, but no age group is safe. It is not a sign of weakness.</p></div>
   </div>
+  <figure class="media-box">
+    <img src="assets/page-2.png" alt="Common Addiction Triggers: Trauma, Peer Pressure, No Support System, Mental Health, Unhealthy Coping Mechanisms, and Prolonged Stress">
+    <figcaption>Common addiction triggers that can push teens toward substances, screens, or constant validation.</figcaption>
+  </figure>
 </section>
 
 <section id="withdrawal">
@@ -173,6 +193,10 @@ footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
     <div class="card"><h3>Offer better options</h3><p>In the famous “Rat Park” experiment, animals with richer surroundings and company steered away from drugs. For people, that means real alternatives like teen centers, reading clubs, recreational sports leagues, art, volunteering, and friends to be around.</p></div>
     <div class="card"><h3>Talk about it openly</h3><p>School assemblies, faith communities, and one-on-one conversations with resources on hand all help. Talk about addiction as something many people struggle with, not as one person’s flaw.</p></div>
   </div>
+  <figure class="media-box">
+    <img src="assets/page-4.png" alt="Willett community and support visual from Capstone materials">
+    <figcaption>Community connection and supportive spaces help teens build healthier alternatives.</figcaption>
+  </figure>
   <h3 style="margin-top:28px">Small things to try this week</h3>
   <div class="card"><ul>
     <li>Turn off notifications for one app that pulls you in.</li>
@@ -259,6 +283,10 @@ footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
     <div class="card"><h3>Short-Term Goal</h3><p>Educate our community, especially adolescents at our school.</p></div>
     <div class="card"><h3>Long-Term Goal</h3><p>Help stop addiction in our population, through education, resources, and school assemblies where people can talk to those affected.</p></div>
   </div>
+  <figure class="media-box">
+    <img src="assets/page-1.png" alt="Capstone project cover or visual from Document1">
+    <figcaption>Capstone visual artifact supporting our student-led teen addiction awareness project.</figcaption>
+  </figure>
   <details><summary>Works Cited</summary>
     <p>Ding, Keya, et al. “The Effects of Digital Addiction on Brain Function and Structure of Children and Adolescents: A Scoping Review.” <em>Healthcare</em>, vol. 12, no. 1, Jan. 2024, p. 15, <a href="https://doi.org/10.3390/healthcare12010015" target="_blank" rel="noopener">doi.org/10.3390/healthcare12010015</a>.</p>
     <p>Gaba, Sherry. “Stop Seeking Validation from Others.” <em>Psychology Today</em>, 24 July 2019, <a href="https://www.psychologytoday.com/us/blog/addiction-and-recovery/201907/stop-seeking-validation-others" target="_blank" rel="noopener">psychologytoday.com</a>.</p>
